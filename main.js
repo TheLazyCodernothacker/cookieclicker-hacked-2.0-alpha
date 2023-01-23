@@ -3132,7 +3132,8 @@ Game.Launch=function()
 									me.unlocked=0;me.bought=0;
 								}
 							}
-							if (str[7]) spl=str[7]; else spl=[];//achievements
+							if (str[7]) spl=str[7]; else spl=[];//
+							ements
 							if (version<2.0046) spl=unpack2(spl).split('');
 							else spl=(spl).split('');
 							Game.AchievementsOwned=0;
@@ -11908,33 +11909,33 @@ Game.Launch=function()
 		
 		var order=0;//this is used to set the order in which the items are listed
 		
-		Game.BankAchievement('Wake and bake');
-		Game.BankAchievement('Making some dough');
-		Game.BankAchievement('So baked right now');
-		Game.BankAchievement('Fledgling bakery');
-		Game.BankAchievement('Affluent bakery');
-		Game.BankAchievement('World-famous bakery');
-		Game.BankAchievement('Cosmic bakery');
-		Game.BankAchievement('Galactic bakery');
-		Game.BankAchievement('Universal bakery');
-		Game.BankAchievement('Timeless bakery');
-		Game.BankAchievement('Infinite bakery');
-		Game.BankAchievement('Immortal bakery');
-		Game.BankAchievement('Don\'t stop me now');
-		Game.BankAchievement('You can stop now');
-		Game.BankAchievement('Cookies all the way down');
-		Game.BankAchievement('Overdose');
+		Game.BankAchievement('Dissapointment');
+		Game.BankAchievement('Still Dissapointment');
+		Game.BankAchievement('Why are you still trying?');
+		Game.BankAchievement('Stop trying!');
+		Game.BankAchievement("This won't change the fact that you got a 3.97 GPA!");
+		Game.BankAchievement("This won't change the fact that you got 1500 on SAT!");
+		Game.BankAchievement("Why aren't you a doctor?!");
+		Game.BankAchievement('Stop doing that white job!');
+		Game.BankAchievement("You're still not a doctor!");
+		Game.BankAchievement('Barily not dissapointment!');
+		Game.BankAchievement('No longer Dissapointment!');
+		Game.BankAchievement("You're now on family tree!");
+		Game.BankAchievement('Your brother still better!');
+		Game.BankAchievement('Stop eating candies.');
+		Game.BankAchievement("You're still not Asian!");
+		Game.BankAchievement('You are becoming fat, eating cows!');
 		
-		Game.CpsAchievement('Casual baking');
-		Game.CpsAchievement('Hardcore baking');
-		Game.CpsAchievement('Steady tasty stream');
-		Game.CpsAchievement('Cookie monster');
-		Game.CpsAchievement('Mass producer');
-		Game.CpsAchievement('Cookie vortex');
-		Game.CpsAchievement('Cookie pulsar');
-		Game.CpsAchievement('Cookie quasar');
-		Game.CpsAchievement('Oh hey, you\'re still here');
-		Game.CpsAchievement('Let\'s never bake again');
+		Game.CpsAchievement('Why you so bad?');
+		Game.CpsAchievement('You are still bad!');
+		Game.CpsAchievement('Below average!');
+		Game.CpsAchievement('Mediocre!');
+		Game.CpsAchievement("You shouldn't be trying!");
+		Game.CpsAchievement('Average!');
+		Game.CpsAchievement('Above average!');
+		Game.CpsAchievement('Brother can do better!');
+		Game.CpsAchievement('You are still crap!');
+		Game.CpsAchievement('Stop wasting you time!');
 		
 		order=30010;
 		new Game.Achievement('Sacrifice',loc("Ascend with <b>%1</b> baked.",loc("%1 cookie",LBeautify(1e6)))+'<q>Easy come, easy go.</q>',[11,6]);
