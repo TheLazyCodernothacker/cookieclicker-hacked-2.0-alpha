@@ -7014,7 +7014,7 @@ Game.Launch=function()
 					
 					if (!Game.prefs.notScary && Game.Objects['Grandma'].amount>=50) list.push('<q>'+choose(loc("Ticker (threatening grandma)"))+'</q><sig>'+Game.Objects['Grandma'].single+'</sig>');
 					
-					if (EN && Game.HasAchiev('Just wrong') && Math.random()<0.05) list.push(NEWS+'cookie manufacturer downsizes, sells own grandmother!');
+					if (EN && Game.HasAchiev('Just wrong') && Math.random()<0.05) list.push(NEWS+'rice farmer manufacturer downsizes, sells own grandmother!');
 					if (!Game.prefs.notScary && Game.HasAchiev('Just wrong') && Math.random()<0.4) list.push('<q>'+choose(loc("Ticker (angry grandma)"))+'</q><sig>'+Game.Objects['Grandma'].single+'</sig>');
 					
 					if (!Game.prefs.notScary && Game.Objects['Grandma'].amount>=1 && Game.pledges>0 && Game.elderWrath==0) list.push('<q>'+choose(loc("Ticker (grandmas return)"))+'</q><sig>'+Game.Objects['Grandma'].single+'</sig>');
@@ -7037,59 +7037,63 @@ Game.Launch=function()
 					else
 					{
 						if (Game.Objects['Farm'].amount>0) list.push(choose([
-						'News : cookie farms suspected of employing undeclared elderly workforce!',
-						'News : cookie farms release harmful chocolate in our rivers, says scientist!',
-						'News : genetically-modified chocolate controversy strikes cookie farmers!',
-						'News : free-range farm cookies popular with today\'s hip youth, says specialist.',
-						'News : farm cookies deemed unfit for vegans, says nutritionist.'
+						'News : rice farms suspected of employing undeclared elderly workforce!',
+						'News : rice farms release harmful emotional damage in our rivers, says scientist!',
+						'News : genetically-modified rice controversy strikes rice farmers!',
+						'News : free-range farm rice popular with today\'s hip youth, says specialist.',
+						'News : farm rice deemed unfit for vegans, says nutritionist.'
+						'News : asian parents still disappointed about rice farmers.'
 						]));
 						
 						if (Game.Objects['Mine'].amount>0) list.push(choose([
-						'News : is our planet getting lighter? Experts examine the effects of intensive chocolate mining.',
-						'News : '+Math.floor(Math.random()*1000+2)+' miners trapped in collapsed chocolate mine!',
-						'News : chocolate mines found to cause earthquakes and sinkholes!',
-						'News : chocolate mine goes awry, floods village in chocolate!',
-						'News : depths of chocolate mines found to house "peculiar, chocolaty beings"!'
+						'News : is our planet getting lighter? Experts examine the effects of emotionally damaging rice farming.',
+						'News : '+Math.floor(Math.random()*1000+2)+' rice miners trapped in collapsed rice mine, Asian parents claim its the most efficient in the crappy business!',
+						'News : rice mines found to cause earthquakes and sinkholes!',
+						'News : rice mine goes awry, floods village in wild rice!',
+						'News : depths of chocolate mines found to house "peculiar, Asian beings"!'
 						]));
 						
 						if (Game.Objects['Factory'].amount>0) list.push(choose([
-						'News : cookie factories linked to global warming!',
-						'News : cookie factories involved in chocolate weather controversy!',
-						'News : cookie factories on strike, robotic minions employed to replace workforce!',
-						'News : cookie factories on strike - workers demand to stop being paid in cookies!',
-						'News : factory-made cookies linked to obesity, says study.'
+						'News : rice cooker factories linked to global warming!',
+						'News : rice cooker factories involved in rice water weather controversy!',
+						'News : rice cooker factories on strike, robotic minions employed to replace workforce!',
+						'News : rice cooker factories on strike - workers demand to stop being paid in white rice grains!',
+						'News : factory-made rice cookers linked to obesity, says study.'
+						'News : Your parents are still disapointed in you, rice cooker factories just arent enough',
 						]));
 						
 						if (Game.Objects['Bank'].amount>0) list.push(choose([
-						'News : cookie loans on the rise as people can no longer afford them with regular money.',
-						'News : cookies slowly creeping up their way as a competitor to traditional currency!',
-						'News : most bakeries now fitted with ATMs to allow for easy cookie withdrawals and deposits.',
+						'News : long grain rice loans on the rise as people can no longer afford them with regular money.',
+						'News : jasmine rice slowly creeping up their way as a competitor to traditional currency!',
+						'News : most chinese resturants now fitted with ATMs to allow for easy rice withdrawals and deposits.',
 						'News : cookie economy now strong enough to allow for massive vaults doubling as swimming pools!',
 						'News : "Tomorrow\'s wealthiest people will be calculated by their worth in cookies", predict economists.'
+						'News : asian parents still disappointed in your poor choice in long grain rice as currency.',
 						]));
 						
 						if (Game.Objects['Temple'].amount>0) list.push(choose([
 						'News : explorers bring back ancient artifact from abandoned temple; archeologists marvel at the centuries-old '+choose(['magic','carved','engraved','sculpted','royal','imperial','mummified','ritual','golden','silver','stone','cursed','plastic','bone','blood','holy','sacred','sacrificial','electronic','singing','tapdancing'])+' '+choose(['spoon','fork','pizza','washing machine','calculator','hat','piano','napkin','skeleton','gown','dagger','sword','shield','skull','emerald','bathtub','mask','rollerskates','litterbox','bait box','cube','sphere','fungus'])+'!',
-						'News : recently-discovered chocolate temples now sparking new cookie-related cult; thousands pray to Baker in the sky!',
-						'News : just how extensive is the cookie pantheon? Theologians speculate about possible '+choose(['god','goddess'])+' of '+choose([choose(animals),choose(['kazoos','web design','web browsers','kittens','atheism','handbrakes','hats','aglets','elevator music','idle games','the letter "P"','memes','hamburgers','bad puns','kerning','stand-up comedy','failed burglary attempts','clickbait','one weird tricks'])])+'.',
-						'News : theists of the world discover new cookie religion - "Oh boy, guess we were wrong all along!"',
-						'News : cookie heaven allegedly "sports elevator instead of stairway"; cookie hell "paved with flagstone, as good intentions make for poor building material".'
+						'News : recently-discovered rice temples now sparking new cookie-related cult; thousands pray to asian in the sky!',
+						'News : just how extensive is the rice pantheon? Theologians speculate about possible '+choose(['god','goddess'])+' of '+choose([choose(animals),choose(['kazoos','web design','web browsers','kittens','atheism','handbrakes','hats','aglets','elevator music','idle games','the letter "P"','memes','hamburgers','bad puns','kerning','stand-up comedy','failed burglary attempts','clickbait','one weird tricks'])])+'.',
+						'News : theists of the world discover new rice religion - "Oh boy, our parents were right all along!"',
+						'News : rice heaven allegedly "sports elevator instead of stairway"; rice hell "paved with flagstone, as good intentions make for poor building material".'
+						'News : asian parents become preists as riceism becomes a dominant religion!",
 						]));
 						
 						if (Game.Objects['Wizard tower'].amount>0) list.push(choose([
-						'News : all '+choose([choose(animals),choose(['public restrooms','clouds','politicians','moustaches','hats','shoes','pants','clowns','encyclopedias','websites','potted plants','lemons','household items','bodily fluids','cutlery','national landmarks','yogurt','rap music','underwear'])])+' turned into '+choose([choose(animals),choose(['public restrooms','clouds','politicians','moustaches','hats','shoes','pants','clowns','encyclopedias','websites','potted plants','lemons','household items','bodily fluids','cutlery','national landmarks','yogurt','rap music','underwear'])])+' in freak magic catastrophe!',
+						'News : all '+choose([choose(animals),choose(['public restrooms','clouds','politicians','moustaches','hats','shoes','pants','clowns','encyclopedias','websites','potted plants','lemons','household items','bodily fluids','cutlery','national landmarks','yogurt','rap music','underwear'])])+' turned into '+choose([choose(animals),choose(['rice farmers','white people rice','brown rice','green rice','jasmine rice','rice miners',])])+' in freak magic catastrophe!',
 						'News : heavy dissent rages between the schools of '+choose(['water','fire','earth','air','lightning','acid','song','battle','peace','pencil','internet','space','time','brain','nature','techno','plant','bug','ice','poison','crab','kitten','dolphin','bird','punch','fart'])+' magic and '+choose(['water','fire','earth','air','lightning','acid','song','battle','peace','pencil','internet','space','time','brain','nature','techno','plant','bug','ice','poison','crab','kitten','dolphin','bird','punch','fart'])+' magic!',
 						'News : get your new charms and curses at the yearly National Spellcrafting Fair! Exclusive prices on runes and spellbooks.',
-						'News : cookie wizards deny involvement in shockingly ugly newborn - infant is "honestly grody-looking, but natural", say doctors.',
-						'News : "Any sufficiently crude magic is indistinguishable from technology", claims renowned technowizard.'
+						'News : jasmine rice wizards deny involvement in shockingly ugly newborn - infant is "honestly grody-looking, but natural", say doctors.',
+						'News : "Any sufficiently crude magic is indistinguishable from technology", claims renowned ricewizard.',
 						]));
 						
 						if (Game.Objects['Shipment'].amount>0) list.push(choose([
-						'News : new chocolate planet found, becomes target of cookie-trading spaceships!',
-						'News : massive chocolate planet found with 99.8% certified pure dark chocolate core!',
-						'News : space tourism booming as distant planets attract more bored millionaires!',
+						'News : new rice flour planet found, becomes target of rice-cake-trading spaceships!',
+						'News : massive rice planet found with 99.8% certified pure asian chocolate core!',
+						'News : space tourism booming as distant planets attract more bored asain children!',
 						'News : chocolate-based organisms found on distant planet!',
-						'News : ancient baking artifacts found on distant planet; "terrifying implications", experts say.'
+						'News : ancient rice cooker artifacts found on distant planet; "terrifying implications", experts say.',
 						]));
 						
 						if (Game.Objects['Alchemy lab'].amount>0) list.push(choose([
