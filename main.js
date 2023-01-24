@@ -1290,6 +1290,7 @@ Game.Launch=function()
 	'<div class="listing">'+(EN?
 		'We have an <a href="https://discordapp.com/invite/cookie" target="_blank">official Discord</a>; if you\'re looking for help, you may also want to visit the <a href="https://www.reddit.com/r/CookieClicker" target="_blank">subreddit</a> or the <a href="https://cookieclicker.wikia.com/wiki/Cookie_Clicker_Wiki" target="_blank">wiki</a>.<br>News and teasers are usually posted on Orteil\'s <a href="https://orteil42.tumblr.com/" target="_blank">tumblr</a> and <a href="https://twitter.com/orteil42" target="_blank">twitter</a>.'
 		:
+				 
 		loc("Useful links: %1, %2, %3, %4.",[
 		'<a href="https://discordapp.com/invite/cookie" target="_blank" class="highlightHover smallBlackButton">Discord</a>',
 		'<a href="https://cookieclicker.wikia.com/wiki/Cookie_Clicker_Wiki" target="_blank" class="highlightHover smallBlackButton">wiki</a>',
@@ -5443,7 +5444,7 @@ Game.Launch=function()
 					}
 					
 					//select an effect
-					var list=[];
+					var list=
 					if (me.wrath>0) list.push('clot','multiply cookies','ruin cookies');
 					else list.push('frenzy','multiply cookies');
 					if (me.wrath>0 && Game.hasGod && Game.hasGod('scorn')) list.push('clot','ruin cookies','clot','ruin cookies');
@@ -7041,7 +7042,7 @@ Game.Launch=function()
 						'News : rice farms release harmful emotional damage in our rivers, says scientist!',
 						'News : genetically-modified rice controversy strikes rice farmers!',
 						'News : free-range farm rice popular with today\'s hip youth, says specialist.',
-						'News : farm rice deemed unfit for vegans, says nutritionist.'
+						'News : farm rice deemed unfit for vegans, says nutritionist.',
 						'News : asian parents still disappointed about rice farmers.'
 						]));
 						
@@ -7058,8 +7059,8 @@ Game.Launch=function()
 						'News : rice cooker factories involved in rice water weather controversy!',
 						'News : rice cooker factories on strike, robotic minions employed to replace workforce!',
 						'News : rice cooker factories on strike - workers demand to stop being paid in white rice grains!',
-						'News : factory-made rice cookers linked to obesity, says study.'
-						'News : Your parents are still disapointed in you, rice cooker factories just arent enough',
+						'News : factory-made rice cookers linked to obesity, says study.',
+						'News : Your parents are still disapointed in you, rice cooker factories just arent enough'
 						]));
 						
 						if (Game.Objects['Bank'].amount>0) list.push(choose([
@@ -7067,8 +7068,8 @@ Game.Launch=function()
 						'News : jasmine rice slowly creeping up their way as a competitor to traditional currency!',
 						'News : most chinese resturants now fitted with ATMs to allow for easy rice withdrawals and deposits.',
 						'News : cookie economy now strong enough to allow for massive vaults doubling as swimming pools!',
-						'News : "Tomorrow\'s wealthiest people will be calculated by their worth in cookies", predict economists.'
-						'News : asian parents still disappointed in your poor choice in long grain rice as currency.',
+						'News : "Tomorrow\'s wealthiest people will be calculated by their worth in cookies", predict economists.',
+						'News : asian parents still disappointed in your poor choice in long grain rice as currency.'
 						]));
 						
 						if (Game.Objects['Temple'].amount>0) list.push(choose([
@@ -7076,8 +7077,8 @@ Game.Launch=function()
 						'News : recently-discovered rice temples now sparking new cookie-related cult; thousands pray to asian in the sky!',
 						'News : just how extensive is the rice pantheon? Theologians speculate about possible '+choose(['god','goddess'])+' of '+choose([choose(animals),choose(['kazoos','web design','web browsers','kittens','atheism','handbrakes','hats','aglets','elevator music','idle games','the letter "P"','memes','hamburgers','bad puns','kerning','stand-up comedy','failed burglary attempts','clickbait','one weird tricks'])])+'.',
 						'News : theists of the world discover new rice religion - "Oh boy, our parents were right all along!"',
-						'News : rice heaven allegedly "sports elevator instead of stairway"; rice hell "paved with flagstone, as good intentions make for poor building material".'
-						'News : asian parents become preists as riceism becomes a dominant religion!",
+						'News : rice heaven allegedly "sports elevator instead of stairway"; rice hell "paved with flagstone, as good intentions make for poor building material".',
+						'News : asian parents become preists as riceism becomes a dominant religion!"
 						]));
 						
 						if (Game.Objects['Wizard tower'].amount>0) list.push(choose([
@@ -7085,7 +7086,7 @@ Game.Launch=function()
 						'News : heavy dissent rages between the schools of '+choose(['water','fire','earth','air','lightning','acid','song','battle','peace','pencil','internet','space','time','brain','nature','techno','plant','bug','ice','poison','crab','kitten','dolphin','bird','punch','fart'])+' magic and '+choose(['water','fire','earth','air','lightning','acid','song','battle','peace','pencil','internet','space','time','brain','nature','techno','plant','bug','ice','poison','crab','kitten','dolphin','bird','punch','fart'])+' magic!',
 						'News : get your new charms and curses at the yearly National Spellcrafting Fair! Exclusive prices on runes and spellbooks.',
 						'News : jasmine rice wizards deny involvement in shockingly ugly newborn - infant is "honestly grody-looking, but natural", say doctors.',
-						'News : "Any sufficiently crude magic is indistinguishable from technology", claims renowned ricewizard.',
+						'News : "Any sufficiently crude magic is indistinguishable from technology", claims renowned ricewizard.'
 						]));
 						
 						if (Game.Objects['Shipment'].amount>0) list.push(choose([
@@ -7093,7 +7094,7 @@ Game.Launch=function()
 						'News : massive rice planet found with 99.8% certified pure asian chocolate core!',
 						'News : space tourism booming as distant planets attract more bored asain children!',
 						'News : chocolate-based organisms found on distant planet!',
-						'News : ancient rice cooker artifacts found on distant planet; "terrifying implications", experts say.',
+						'News : ancient rice cooker artifacts found on distant planet; "terrifying implications", experts say.'
 						]));
 						
 						if (Game.Objects['Alchemy lab'].amount>0) list.push(choose([
